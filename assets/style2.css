@@ -244,7 +244,7 @@ body{
 }
 .info_container .event_topics{
     display: flex;
-    width: 40%;
+    width: 50%;
     align-items: center;
     justify-content: space-between;
     
@@ -312,7 +312,7 @@ body{
 
 
 .querry{
-    width: 30%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
