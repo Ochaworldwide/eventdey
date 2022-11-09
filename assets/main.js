@@ -25,3 +25,24 @@ cardDetail1.addEventListener('click', function(){
         A1.style.display = 'none'
     }
 })
+
+
+
+
+
+
+
+
+
+
+
+
+function privateEvent(){
+    var privateEvent=document.getElementById("private-event");
+    var privateEvent2=document.getElementById("private-event2");
+    var publicEvent=document.getElementById("public-event");
+
+    publicEvent.style.display="none"
+    privateEvent.style.display="block"
+    privateEvent2.style.display="block"
+}

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style2.css">
+    <link rel="stylesheet" href="assets/bootstrap-icons-1.9.1/bootstrap-icons.css">
+</head>
+<body>
+    <div class="nav-container">
+        <h3><a href="index.html">eventdey</a></h3>
+        <div id="nav-link1">
+            <a href="desktop2.html">Events</a>
+            <a href="desktop13.html">Orders</a>
+            <a href="#">Analytics</a>
+            <a href="#">Payouts</a>
+            <a href="#">Settings</a>
+        </div>
+        <div id="nav-link2">
+            <img src="./assets/Pictures/Organizing Events/1.svg" alt="">
+            <div id="nav_link_img">
+                <img src="./assets/Pictures/Organizing Events/2.svg" alt="">
+                <i class="bi bi-caret-down"></i>
+            </div>
+       
+        </div>
+    </div>
+
+    <div class="info_container">
+        <h2>Create event - Tickets</h2>
+        <div class="event_topics">
+            <div class="box">
+                Event info
+                <div class="line"></div>
+            </div>
+            <div class="box">
+                Event details
+                <div class="line"></div>
+            </div>
+            <div class="box">
+                Tickets
+                <div class="line"></div>
+            </div>
+            <div class="box">
+                Publish
+                <div class="active"></div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Designer Part -->
+
+        <div class="designer_box">
+            <div class="d_box">
+                <h3>
+                   Designer’s Connect 
+                </h3>
+                <p>
+                    Silverbird cinemas gallery, Udoudoma Avenue, Uyo
+                </p>
+                <p>
+                    Sat, Sept 17, 10:00AM
+                </p>
+                <p>
+                    N3,000 - N75,000
+                </p>
+                
+                <div class="liner">
+                    This is a gathering of all categories of designers within Uyo.
+                </div>
+                   
+               
+            </div>
+            <img src="assets/Pictures/publish-now/rec.png" alt="This is an image" >
+        </div>
+
+
+
+        <!-- form part -->
+
+
+        <form action="">
+
+            <div class="querry" id="event-type">
+
+
+                <h2>Who can see your event?</h2>
+
+                <div class="querry1">
+                    <input type="radio" name="audience" onclick="changerHandle()">
+                    <div>
+                        <h3>Public</h3>
+                        <p>Shared on Eventdey and search engines</p>
+                    </div>
+                </div>
+                <div class="querry1">
+                    <input type="radio" name="audience"  onclick="changer()">
+                    <div>
+                        <h3>Private</h3>
+                        <p>Only available to a selected audience</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <br>
+
+
+
+            <div class="querry" id="private-event">
+
+                <h2>Select Audience</h2>
+
+                <div class="audiences">
+                    <div class="link active" id="firstlink" onclick="linkHandle()">
+                        Anyone with link
+                    </div>
+                    <div class="link " id="secondlink" onclick="passWordHandle()">
+                        People with password
+                    </div>
+                </div>
+
+                <div class="password" id="password">
+                    <h5>Set Pasword</h5>
+                    <div class="details">
+                        <input type="password" name="" id="encrypted_password" placeholder="Enter your password">
+                        <i class="bi bi-eye" onclick="revealHeadle()"></i>
+                    </div>
+                    
+                  
+                </div>
+
+            </div>
+            
+            <br>
+
+
+
+
+
+
+            <div class="querry" id="private-event2">
+
+                <h2>Will this event ever be public?</h2>
+
+                <div class="querry1">
+                    <input type="radio" name="pub" onclick="dateHandle()">
+                    <div>
+                        <h3>No, keep it private</h3>
+                       
+                    </div>
+                </div>
+                <div class="querry1">
+                    <input type="radio" name="pub" id="">
+                    <div>
+                        <h3>Yes, schedule to share publicly</h3>
+                       
+                    </div>
+                </div>
+
+                <br>
+            </div>
+            
+
+            <div class="querry" id=public-event>
+
+                <h2>When should we publish your event</h2>
+
+                <div class="querry1">
+                    <input type="radio" name="pub" id="">
+                    <div>
+                        <h3>Publish Now</h3>
+                       
+                    </div>
+                </div>
+                <div class="querry1">
+                    <input type="radio" name="pub" id="">
+                    <div>
+                        <h3>Schedule Later</h3>
+                       
+                    </div>
+                </div>
+
+               
+
+            </div>
+
+            <div class="date-time" >
+                <div class="box">
+                    <h6>Start Date</h6>
+                    <div class="time-box" >
+                        <input type="date" name="timing" id="">
+                    </div>
+                </div>
+                <div class="box">
+                    <h6>Start Time</h6>
+                    <div class="time-box">
+                        <input type="time" name="timing" id="">
+                    </div>
+                </div>
+
+            </div>
+            
+
+        </form>
+
+
+
+
+
+    </div>
+
+     <!-- footer -->
+     <div class="foot">
+        <div class="sec">
+            <p><span><i class="bi bi-caret-down"></i></span> Prev </p>
+
+        </div>
+        <div class="sec">
+            <p>Save Draft</p>
+            <p><span><i class="bi bi-eye"></i></span> Preview</p>
+            <p>Next <span><i class="bi bi-caret-right"></i></span></p>
+        </div>
+    </div>
+
+
+    
+
+<script>
+
+    function changer(){
+        document.getElementById("private-event").style.display="block";
+        document.getElementById("private-event2").style.display="block";
+        document.getElementById("public-event").style.display="none";
+    }
+
+    function changerHandle(){
+        document.getElementById("private-event").style.display="none";
+        document.getElementById("private-event2").style.display="none";
+        document.getElementById("public-event").style.display="block";
+    }
+
+    function passWordHandle(){
+        document.getElementById("password").style.display="block";
+        document.getElementById("firstlink").style.backgroundColor="transparent";
+        document.getElementById("secondlink").style.backgroundColor="#F4F1FF";
+        
+    }
+
+    function linkHandle(){
+        document.getElementById("password").style.display="none";
+        document.getElementById("firstlink").style.backgroundColor="#F4F1FF";
+        document.getElementById("secondlink").style.backgroundColor="transparent";
+        
+    }
+
+    function revealHeadle(){
+        const encrypted_password=document.getElementById("encrypted_password");
+        if(encrypted_password.type==="password"){
+            encrypted_password.type="text";
+        }
+        else{
+            encrypted_password.type="password";
+        }
+    }
+
+    
+</script>
+
+
+
+
+   
+</body>
+</html>

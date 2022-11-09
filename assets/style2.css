@@ -219,3 +219,234 @@ body a{
 .foot .sec{
     display: flex;
 }
+
+
+
+
+
+
+/* publish-now section */
+
+body{
+    background: #F5F0EB;
+}
+
+
+.info_container{
+    width: 80%;
+    height: 1300px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    
+}
+.info_container .event_topics{
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.info_container .event_topics .box{
+    width: 20%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #765FBE;
+}
+.info_container .event_topics .box .line{
+    width: 70%;
+    height: 3px;
+    background-color:#765FBE;
+}
+.info_container .event_topics .active{
+    width: 70%;
+    height: 3px;
+    background-color:#DAD2F7;;
+}
+
+/* design part */
+
+.designer_box{ 
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.designer_box .d_box{
+    width: 35%;
+    height: 200px;
+    background: #FEF1E3;
+    font-size: 13px;
+    padding:0% 3% 0% 3%;
+    box-sizing: border-box;
+    border: 1px solid #FFD2A6;
+    border-radius: 5px;
+
+}
+
+.designer_box .d_box h3{
+    color: #332269;
+
+}
+.designer_box .d_box .liner{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+   border-top: 1px solid #FFD2A6;
+
+}
+
+.designer_box img{
+    width: 60%;
+    height: 200px;
+    
+    
+}
+
+/* form part */
+
+
+.querry{
+    width: 26%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+
+.querry1{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top: 24px;
+    box-sizing: border-box;
+}
+.querry1 input{
+    width: 14%;
+    height: 14px;
+    
+    
+ }
+
+.querry1 div{
+    width: 100%;
+    height: 30px;
+   
+}
+.querry1 div h3{
+   font-size: 15px;
+   margin: 0px;
+   font-weight: lighter;
+}
+#event-type{
+    height: 300px;
+}
+#public-event{
+
+    justify-content: center;
+
+}
+.date-time{
+    width: 40%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+
+}
+.date-time .box{
+    width: 45%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+.date-time .box .time-box{
+    width: 100%;
+    height: inherit;
+}
+.date-time .box h6{
+   margin: 0px;
+   font-size: 14px;
+   color: #515A6A;
+   font-weight: normal;
+}
+
+.date-time .box .time-box input{
+    width: 90%;
+    height: 37px;
+    background: #FEF1E3;
+    border: 1px solid #FFD2A6;
+    border-radius: 4px;
+    color: #515A6A;
+}
+
+/* When the event is selcted as private */
+
+.querry .audiences{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.audiences .link{
+    width: 45%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #CBBDF8;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.audiences .active{
+
+    background-color: #F4F1FF;
+}
+#private-event, #private-event2{
+    display: none;
+}
+
+
+.querry .password{
+    width: 100%;
+   margin-top: 15%;
+   display: none;
+}
+.querry .password .details{
+    width: 90%;
+    height: 50px;
+    border: 1px solid #FFD2A6;
+    outline: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 5px;
+    box-sizing: border-box;
+}
+.querry .password .details input{
+    width: 90%;
+    height: 40px;
+    outline: none;
+    padding-left: 5px;
+    border: none;
+    background-color: transparent;
+}
+.querry .password .details i{
+    cursor: pointer;
+}
+.password h5{
+    margin: 0px;
+}
